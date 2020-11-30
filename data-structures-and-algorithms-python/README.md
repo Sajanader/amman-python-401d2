@@ -3,8 +3,8 @@
 
 |**contents**| **links**             |   **Title**|
 |---         |---                     |    ---     |
-|  challenge-01 | [Link](/data_structures_and_algorithms/array_reverse/array_reverse.py)    | array_reverse   |
-|  challege-02 | [Link](/data_structures_and_algorithms/array_shift/array_shift.py)    |array_shift  |
+|  challenge-01 | [Link](./data_structures_and_algorithms/array_reverse/array_reverse.py)    | array_reverse   |
+|  challege-02 | [Link](./data_structures_and_algorithms/array_shift/array_shift.py)    |array_shift  |
 
 
 # Reverse an Array
