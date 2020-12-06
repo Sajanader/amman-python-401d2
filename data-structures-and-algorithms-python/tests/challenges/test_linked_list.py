@@ -1,49 +1,34 @@
-from  data.challenges.linked_list.linked_list import LinkedList
-import 
-pytest
+from data.challenges.linked_list.linked_list import LinkedList
+import pytest
+from data.challenges.linked_list.linked_list import __version__
 
-def test_none():
-    list = LinkedList()
-    assert list.head == None
+def test_version():
+    actual = __version__
+    expected = '0.1.0'
+    assert actual == expected
 
 def test_insert():
     list = LinkedList()
-    list.insert(3)
-    assert list.head.value == 3
-
-def test_head():
-    list = LinkedList()
-    list.insert(3)
-    assert list.head.value == 3
+    list.insert(9)
+    assert list.head.value == 9
 
 def test_insert_Numbers():
     list = LinkedList()
-    list.insert(3)
-    list.insert(5)
-    list.insert(7)
-    list.insert(9)
-    assert list.head.value == 9
-    assert list.head.next.value == 7
-    assert list.head.next.next.value == 5
-    assert list.head.next.next.next.value == 3
-    assert list.head.next.next.next.next == None
+    list.insert(1)
+    list.insert(2)
+    assert list.head.value == 2
+    assert list.head.next.value == 1
+    assert list.head.next.next == None
 
 def test_includes_true():
     list = LinkedList()
-    list.insert(7)
-    list.insert(9)
-    assert list.includes(9) == True
-
-def test_includes_false():
-    list = LinkedList()
-    list.insert(7)
-    list.insert(9)
-    assert list.includes(5) == False
+    list.insert(4)
+    list.insert(5)
+    assert list.includes(5) == True
+    assert list.includes(7) == False
 
 def test_str():
     list = LinkedList()
-    list.insert(3)
-    list.insert(5)
-    list.insert(7)
-    list.insert(9)
-    assert list.__str__() == "{ 9 } -> { 7 } -> { 5 } -> { 3 } -> NULL"
+    list.insert(1)
+    list.insert(2)
+    assert list.__str__() == "{ 2 } -> { 1 } -> NULL"
