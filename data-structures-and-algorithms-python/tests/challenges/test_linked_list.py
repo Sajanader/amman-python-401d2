@@ -1,11 +1,11 @@
 from data.challenges.linked_list.linked_list import LinkedList
 import pytest
-from data.challenges.linked_list.linked_list import __version__
+# from data.challenges.linked_list.linked_list import __version__
 
-def test_version():
-    actual = __version__
-    expected = '0.1.0'
-    assert actual == expected
+# def test_version():
+#     actual = __version__
+#     expected = '0.1.0'
+#     assert actual == expected
 
 def test_insert():
     list = LinkedList()
