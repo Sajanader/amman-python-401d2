@@ -8,7 +8,7 @@ def test_insert():
 
 def test_insert_Numbers():
     list = LinkedList()
-    list.insert(1)ss
+    list.insert(1)
     list.insert(2)
     assert list.head.value == 2
     assert list.head.next.value == 1
@@ -59,3 +59,15 @@ def test_insertAfter():
     assert list.head.next.next.value == 7
     assert list.head.next.next.next.value == 3
     assert list.head.next.next.next.next.value == 8   
+
+def test_startFromLast():
+    list = LinkedList() 
+    list.append(1)
+    list.append(2) 
+    list.append(3) 
+    assert  list.startFromLast(0) == 3
+
+
+
+
+
