@@ -15,7 +15,7 @@ class LinkedList:
             self.head = node
     def includes(self, data):
         current = self.head
-        while (current != None):
+        while current != None:
             if current.value == data:
                 return True
             else:
@@ -26,7 +26,7 @@ class LinkedList:
         else:
             list = ""
             current = self.head
-            while (current != None):
+            while current != None:
                 list += '{ %s } -> ' %current.value
                 current = current.next
             list += 'NULL'
@@ -44,10 +44,10 @@ class LinkedList:
     
     def insertBefore(self,value,newVal):
         node = Node(newVal)
-        if (self.head.value == value):
+        if self.head.value == value:
             return(self.insert(newVal))
         current = self.head
-        while(current.next.value != value):
+        while current.next.value != value:
             current = current.next
         node.next = current.next
         current.next = node
