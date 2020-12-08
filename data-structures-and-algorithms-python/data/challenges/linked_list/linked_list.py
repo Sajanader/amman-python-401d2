@@ -60,6 +60,26 @@ class LinkedList:
         node.next = current.next
         current.next = node
 
+    def  startFromLast(self,k):
+        current = self.head
+        length = 0
+        while current: 
+              current = current.next
+              length += 1
+          
+        if k > length: 
+            print('The number is greater than the length of LinkedList') 
+            return
+        else:
+            current = self.head 
+            for i in range(0, length - k-1): 
+                current = current.next
+            return current.value
+if __name__ == "__main__":
+    llist = LinkedList() 
+    llist.append(3)
+    llist.append(4) 
+    print(llist.startFromLast(9))       
 
 
 
