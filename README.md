@@ -6,6 +6,10 @@
 |  challenge-01 | [Link](/data_structures_and_algorithms/array_reverse/array_reverse.py)    | array_reverse   |
 |  challege-02 | [Link](/data_structures_and_algorithms/array_shift/array_shift.py)    |array_shift  |
 |  challege-05 | [Link](/data-structures-and-algorithms-python/data_structure/linked_list)    |Linked_list  |
+
+|  challege-10 | [Link](/data-structures-and-algorithms-python/data_structure/stacks_and_queues)    |stacks_and_queues |
+
+
 |  challege-08 | [Link](/data-structures-and-algorithms-python/data_structure/linked_list)    |zipLists |
 
 
