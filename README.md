@@ -1,6 +1,23 @@
-# Advanced Python
 
-## Course Overview
+## Table of content
 
-> **Advanced Python** is a thorough exploration of the multiple areas where Python is widely used. Students will be learning high level engineering principles through developing applications and libraries over the course of 8 Modules, extending over 2 sections
+|**contents**| **links**             |   **Title**|
+|---         |---                     |    ---     |
+|  challenge-01 | [Link](/data_structures_and_algorithms/array_reverse/array_reverse.py)    | array_reverse   |
+|  challege-02 | [Link](/data_structures_and_algorithms/array_shift/array_shift.py)    |array_shift  |
+|  challege-05 | [Link](/data-structures-and-algorithms-python/data_structure/linked_list)    |Linked_list  |
 
+
+# Reverse an Array
+## Challenge
+Jut write a function that contains list; we have to arrange the element in reverse way.....
+
+## Approach & Efficiency
+I search about it on google and I used the cheatsheet; and it diplayed the method called reverse()
+
+## Solution
+![whiteboard-image](./assets/array-reverse.png)
+
+
+## array-shift 
+![whiteboard-image](./assets/array-shift.png)
