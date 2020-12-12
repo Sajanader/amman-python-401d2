@@ -1,4 +1,4 @@
-from data.challenges.linked_list.linked_list import LinkedList
+from data_structures_and_algorithms.data_structure.linked_list.linked_list import LinkedList
 import pytest
 
 def test_insert():
@@ -66,8 +66,5 @@ def test_startFromLast():
     list.append(2) 
     list.append(3) 
     assert  list.startFromLast(0) == 3
-
-
-
 
 

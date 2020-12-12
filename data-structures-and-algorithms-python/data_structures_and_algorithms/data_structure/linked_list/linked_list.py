@@ -75,6 +75,25 @@ class LinkedList:
             for i in range(0, length - k-1): 
                 current = current.next
             return current.value
+@staticmethod
+def mergeLists(ll_1, ll_2):
+
+    # Check if any of the given lists is empty
+    if not ll_1.head:
+        return ll_2.head
+    elif not ll_2.head:
+        return ll_1.head
+
+    curr_1, curr_2 = ll_1.head, ll_2.head
+
+    while curr_1 and curr_2:
+        next_1, curr_1.next = curr_1.next, curr_2
+        if next_1:
+            next_2, curr_2.next = curr_2.next, next_1
+        curr_1, curr_2 = next_1, next_2
+
+    return ll_1.head
+               
 if __name__ == "__main__":
     llist = LinkedList() 
     llist.append(3)

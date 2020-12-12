@@ -1,5 +1,5 @@
 # put your array_reverse challenge tests here
-from data-structures-and-algorithms-python.data.challenges.array_reverse.array_reverse import reverse_array
+from data_structures_and_algorithms.challenges.array_reverse import reverse_array
 
 # here's a test to get you started
 def test_reverse_array():
