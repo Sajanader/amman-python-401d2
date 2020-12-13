@@ -2,6 +2,12 @@
 <!-- Short summary or background information -->
 ## A stack
  is a data structure that consists of Nodes. Each Node references the next Node in the stack, but does not reference its previous.
+## PseudoQueue:
+ PseudoQueue class will implement our standard queue interface (the two methods listed below), but will internally only utilize 2 Stack objects. 
+### The class with the following methods:
+
+* enqueue(value) which inserts value into the PseudoQueue, using a first-in, first-out approach.
+* dequeue() which extracts a value from the PseudoQueue, using a first-in, first-out approach.
 
 ## Mehtods that implemented in stack class:
 

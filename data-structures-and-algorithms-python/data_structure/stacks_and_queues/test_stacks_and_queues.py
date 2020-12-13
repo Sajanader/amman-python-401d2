@@ -1,4 +1,4 @@
-from stacks_and_queues import Stack, Queue 
+from stacks_and_queues import Stack, Queue, PseudoQueue
 import pytest
 
 @pytest.fixture
@@ -51,6 +51,23 @@ def test_dequeue_one_item(prep_queue):
 
 def test_is_empty(prep_queue):
     assert  prep_queue.is_empty() == False
+    # ------------------------------------
+
+def test_PseudoQueue_enqueue():
+    element = PseudoQueue()
+    element.enqueue(1)
+    element.enqueue(2)
+    assert element.stack1.peek() == 2
+     
+
+def test_PseudoQueue_dequeue():
+    element = PseudoQueue()
+    element.enqueue(1)
+    element.enqueue(2)
+    element.dequeue()
+    assert  element.stack2.peek() == 2
+       
+
 
 
     
