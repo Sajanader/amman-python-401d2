@@ -1,4 +1,5 @@
-from stacks_and_queues import Stack, Queue, PseudoQueue
+from stacks_and_queues import Stack, Queue
+from queue_with_stacks import PseudoQueue
 import pytest
 
 @pytest.fixture
