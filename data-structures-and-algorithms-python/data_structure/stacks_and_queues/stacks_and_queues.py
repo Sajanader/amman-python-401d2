@@ -14,7 +14,7 @@ class Stack:
 
     def pop(self):
         if self.top == None:
-            raise AttributeError('Cannot be called on empty stack')
+            raise AttributeError('Cannot be called an empty stack')
         else:
             remved_top = self.top.value
             self.top = self.top.next 
@@ -63,6 +63,13 @@ class Queue:
            return True
         else:
             return False
+
+
+    
+      
+
+
+
       
 
 
