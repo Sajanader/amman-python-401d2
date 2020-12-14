@@ -52,7 +52,7 @@ def test_dequeue_one_item(prep_queue):
 
 def test_is_empty(prep_queue):
     assert  prep_queue.is_empty() == False
-    # ------------------------------------
+# -------------------------------------------------------------------------
 
 def test_PseudoQueue_enqueue():
     element = PseudoQueue()
