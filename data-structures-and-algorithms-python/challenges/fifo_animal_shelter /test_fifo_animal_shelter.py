@@ -1,41 +1,79 @@
-import pytest
+from fifo_animal_shelter import Queue, Node, Dog, Cat, AnimalShelter
 
-from fifo_animal_shelter import Animal, AnimalShelter, Cat, Dog
+def test_queue_exist():
+    assert Queue
 
+def test_animal_shelter_exist():
+    assert AnimalShelter
 
-class TestAnimalShelter:
+def test_cat():
+    assert Cat
 
-    @pytest.fixture()
-    def shelter(self):
-        return AnimalShelter()
+def test_dog():
+    assert Dog
 
-    @pytest.fixture()
-    def cat(self):
-        return Cat('kitten', 5)
-
-    @pytest.fixture()
-    def dog(self):
-        return Dog('Jessi', 4)
-
-    def test_enqueue_multiple_cats(self, shelter):
-        cat1 = Cat('cat_1', 1)
-        cat2 = Cat('cat_2', 2)
-        assert shelter.cats.front is None
-        shelter.enqueue(cat1)
-        shelter.enqueue(cat2)
-        assert shelter.cats.front.value.name == 'cat_1'
+def test_enqueue_cat():
+    shelter1 = AnimalShelter('shelter1')
+    cat1 = Cat('cat1')
+    cat2 = Cat('cat2')
+    cat3 = Cat('cat3')
+    shelter1.enqueue(cat1)
+    shelter1.enqueue(cat2)
+    shelter1.enqueue(cat3)
+    assert shelter1
 
 
+def test_dequeue_cat():
+    shelter1 = AnimalShelter('shelter1')
+    cat1 = Cat('cat1')
+    cat2 = Cat('cat2')
+    cat3 = Cat('cat3')
+    shelter1.enqueue(cat1)
+    shelter1.enqueue(cat2)
+    shelter1.enqueue(cat3)
+    assert shelter1.dequeue('cat').name == 'cat1'
 
-    def test_enqueue_mixed_animals(self, shelter):
-        assert shelter.dogs.front is None
-        assert shelter.cats.front is None
-        cat1 = Cat('cat_1', 1)
-        dog1 = Dog('dog_1', 1)
-        shelter.enqueue(cat1)
-        shelter.enqueue(dog1)
+
+def test_enqueue_dog():
+    shelter1 = AnimalShelter('shelter1')
+    dog1 = Dog('dog1')
+    dog2 = Dog('dog2')
+    shelter1.enqueue(dog1)
+    shelter1.enqueue(dog2)
+    assert shelter1
 
 
+def test_dequeue_dog():
+    shelter1 = AnimalShelter('shelter1')
+    dog1 = Dog('dog1')
+    dog2 = Dog('dog2')
+    shelter1.enqueue(dog1)
+    shelter1.enqueue(dog2)
+    assert shelter1.dequeue('dog').name == 'dog1'
 
 
- 
+def test_enqueue_cats_and_dogs():
+    shelter2 = AnimalShelter('shelter2')
+    dog1 = Dog('dog1')
+    cat1 = Cat('cat1')
+    dog2 = Dog('dog2')
+    cat2 = Cat('cat2')
+    shelter2.enqueue(dog1)
+    shelter2.enqueue(cat1)
+    shelter2.enqueue(dog2)
+    shelter2.enqueue(cat2)
+    assert shelter2
+
+
+def test_dequeue_cats_and_dogs():
+    shelter2 = AnimalShelter('shelter2')
+    dog1 = Dog('dog1')
+    cat1 = Cat('cat1')
+    dog2 = Dog('dog2')
+    cat2 = Cat('cat2')
+    shelter2.enqueue(dog1)
+    shelter2.enqueue(cat1)
+    shelter2.enqueue(dog2)
+    shelter2.enqueue(cat2)
+    assert shelter2.dequeue('cat').name == 'cat1'
+    assert shelter2.dequeue('dog').name == 'dog1'

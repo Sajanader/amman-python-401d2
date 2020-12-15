@@ -1,48 +1,64 @@
-from stacks_and_queues.stacks_and_queues import Queue , Node
+class Node:
+  
+    def __init__(self, value, next_=None):
+        self.value = value
+        self.next = next_
 
-class Animal:
-    def __init__(self, name, age):
-        self.name = name
-        self.age = age
-        self.type = _type
+class Queue:
+    def __init__(self):
+        self.front = None
+        self.rear = None
 
+    def enqueue(self, value):
+        new_node = Node(value)
+        if self.front:
+            self.rear.next = new_node
+            self.rear = new_node
+        else:
+            self.front = new_node
+            self.rear = new_node
 
-class Cat(Animal):
-    def __init__(self, name, age):
-        super().__init__(name, age)
-        self.type = 'Cat'
-
-
-class Dog(Animal):
-    def __init__(self, name, age):
-        super().__init__(name, age)
-        self.type = 'Dog'
+    
+    def dequeue(self):
+        if self.front:
+            temp = self.front
+            if self.front.next == None:
+                self.front = None
+                self.rear = None
+            else:
+                self.front = self.front.next
+            temp.next = None
+            return temp.value
+        else:
+            raise AttributeError('The queue is Empty')
 
 
 class AnimalShelter:
-    def __init__(self):
+    def __init__(self, name):
+        self.name = name
         self.cats = Queue()
         self.dogs = Queue()
-        self.animal_order = Queue()
 
     def enqueue(self, animal):
-
-        if animal.type == 'Cat':
+        if animal.type == 'cat':
             self.cats.enqueue(animal)
-            self.animal_order.enqueue('Cat')
-        else:
+        elif animal.type == 'dog':
             self.dogs.enqueue(animal)
-            self.animal_order.enqueue('Dog')
-   
+        
+    
+    def dequeue(self, pref = None):
+        if pref == 'cat':
+            return self.cats.dequeue()
+        elif pref == 'dog':
+            return self.dogs.dequeue()
 
-    def dequeue(self, preference=None):
 
-        try:
-            if not preference:
-                preference = self.animal_order.dequeue()
-            if preference.lower() == 'cat':
-                animal = self.cats.dequeue()
-            elif preference.lower() == 'dog':
-                animal = self.dogs.dequeue()
-        except AttributeError as err:
-            raise AttributeError('There is no animals!')
+class Cat:
+    def __init__(self, name):
+        self.name = name
+        self.type = 'cat'
+
+class Dog:
+    def __init__(self, name):
+        self.name = name
+        self.type = 'dog'
