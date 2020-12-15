@@ -1,6 +1,6 @@
 # linked_list
 
-# Reverse an Array
+
 ## Challenge
  write a class that has five methods:
 * The first one is responsible for insterting node to the linked list..
