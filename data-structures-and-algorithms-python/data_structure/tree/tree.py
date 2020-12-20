@@ -51,6 +51,26 @@ class BinaryTree:
             _walk(self.root)
 
         return array_of_output
+
+    def max_value(self):
+        value = self.root.value
+        def _highest(node,value):
+            if node:
+                if node.value > value:
+                    value = node.value
+                _highest(node.left, value)
+                return _highest(node.right, value)
+            else:
+                return value
+    
+        return _highest(self.root, value)
+    
+                
+
+
+
+
+
                 
 
 
@@ -95,6 +115,7 @@ if __name__ == "__main__":
     bt.root.left.left = Node(10)
     bt.root.right.right = Node(3)
     print(bt.preorder())
+    print(bt.max_value())
  
 
 
