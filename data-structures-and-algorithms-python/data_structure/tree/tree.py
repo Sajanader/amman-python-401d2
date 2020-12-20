@@ -11,7 +11,6 @@ class BinaryTree:
 
     def preorder(self):
         array_of_output = [] 
-
         def _walk(node):
             array_of_output.append(node.value)
             if node.left:
@@ -21,6 +20,37 @@ class BinaryTree:
         _walk(self.root)  
  
         return array_of_output 
+
+    def inOrder(self):
+        array_of_output = []
+
+        def _walk(node):
+            if node.left:
+                _walk(node.left)
+            array_of_output.append(node.value)
+            if node.right:
+                _walk(node.right)
+            return array_of_output
+
+        if self.root:    
+            _walk(self.root)
+        return array_of_output
+
+    def postOrder(self):
+        array_of_output = []
+
+        def _walk(node):
+            if node.left:
+                _walk(node.left)
+            if node.right:
+                _walk(node.right)
+            array_of_output.append(node.value)
+            return array_of_output
+
+        if self.root:    
+            _walk(self.root)
+
+        return array_of_output
                 
 
 
