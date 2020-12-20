@@ -42,4 +42,6 @@ ALGORITHM postOrder(root)
     OUTPUT <-- root.value
 ```
 ## Binary Search Trees
-A Binary Search Tree (BST) is a type of tree that does have some structure attached to it. In a BST, nodes are organized in a manner where all values that are smaller than the root are placed to the left, and all values that are larger than the root are placed to the right.    
+A Binary Search Tree (BST) is a type of tree that does have some structure attached to it. In a BST, nodes are organized in a manner where all values that are smaller than the root are placed to the left, and all values that are larger than the root are placed to the right. 
+
+
