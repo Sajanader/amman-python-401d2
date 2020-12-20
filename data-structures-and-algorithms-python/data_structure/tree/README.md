@@ -1,4 +1,4 @@
-## tree 
+## Tree 
 
 ## Pre-order
 Let’s break down the pre-order traversal. Here is the pseudocode for this traversal method:
