@@ -44,7 +44,7 @@ class Queue:
             self.front =node
             self.rear = node    
 
-    def dequeue(self,data):
+    def dequeue(self):
         if self.front:
             removed_front = self.front
             self.front = self.front.next

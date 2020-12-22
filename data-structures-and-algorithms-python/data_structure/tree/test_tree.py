@@ -28,3 +28,10 @@ def test_max_value():
     Binary_tree.root.right = Node(5)
     Binary_tree.root.left = Node(-1)
     assert Binary_tree.max_value(Binary_tree.root) == 6
+
+def test_breadth():
+    Binary_tree = BinaryTree()
+    Binary_tree.root = Node(6)
+    Binary_tree.root.right = Node(5)
+    Binary_tree.root.left = Node(-1)
+    assert Binary_tree.breadth_first_traversal(Binary_tree.root) == [6,5,-1]    
