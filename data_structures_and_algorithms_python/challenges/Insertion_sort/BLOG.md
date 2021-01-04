@@ -16,7 +16,7 @@ SelectionSort(int[] arr)
 ```
 ## Trace:
 
-Sample Array: []     
+Sample Array: [5,2,4,6,1,3]     
 ![image](https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQDrQu1_2tC6ZnCXipZvEk0_8Mh64ik9pEorQ&usqp=CAU)
 
 
