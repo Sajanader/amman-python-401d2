@@ -16,8 +16,8 @@ SelectionSort(int[] arr)
 ```
 ## Trace:
 
-Sample Array: [8,4,23,42,16,15]     
-![iage](https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQDrQu1_2tC6ZnCXipZvEk0_8Mh64ik9pEorQ&usqp=CAU)
+Sample Array: []     
+![image](https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQDrQu1_2tC6ZnCXipZvEk0_8Mh64ik9pEorQ&usqp=CAU)
 
 
 ## Efficency
