@@ -6,11 +6,11 @@ Jut write a function that contains list; we have to arrange the element in rever
 I search about it on google and I used the cheatsheet; and it diplayed the method called reverse()
 
 ## Solution
-![whiteboard-image](./assets/array-reverse.png)
+![whiteboard-image](../../assets/array-reverse.png)
 
 
 ## 2-shift 
-![whiteboard-image](./assets/array-shift.png)
+![whiteboard-image](../../assets/array-shift.png)
 
 ## 3-First-in, First out Animal Shelter.
 ## Feature Tasks
@@ -20,13 +20,14 @@ I search about it on google and I used the cheatsheet; and it diplayed the metho
 2- dequeue(pref): returns either a dog or a cat. If pref is not "dog" or "cat" then return null.
 
 ## 4-Multi-bracket Validation.
+
 * function should take a string as its only argument, and should return a boolean * representing whether or not the brackets in the string are balanced. There are 3 types of brackets:
 
 1. Round Brackets : ()
 2. Square Brackets : []
 3. Curly Brackets : {}
 
-## 5- Isertion_sort:
+## 5- Insertion_sort:
 ### Challenge Summary
 * Review the pseudocode below, then trace the algorithm by stepping through the process with the provided sample array. Document your explanation by creating a blog article that shows the step-by-step output after each iteration through some sort of visual.
 
@@ -59,13 +60,6 @@ No additional space is being created. This array is being sorted in place…keep
 
 ## Solution
 ![image](../../assets/challenge_26.jpg)
-
-## 4-Multi-bracket Validation.
-* function should take a string as its only argument, and should return a boolean * representing whether or not the brackets in the string are balanced. There are 3 types of brackets:
-
-1. Round Brackets : ()
-2. Square Brackets : []
-3. Curly Brackets : {}
 
 ## 6- merge_sort:
 ### Challenge Summary
@@ -124,3 +118,52 @@ The space complexity of Merge sort is O(n). This means that this algorithm takes
 
 ## Solution
 ![image](../../assets/challenge-27.jpg)
+
+
+## 7- Quick_sort:
+### Challenge Summary
+* Review the pseudocode below, then trace the algorithm by stepping through the process with the provided sample array. Document your explanation by creating a blog article that shows the step-by-step output after each iteration through some sort of visual.
+**Pseudocode**
+```
+ALGORITHM QuickSort(arr, left, right)
+    if left < right
+        // Partition the array by setting the position of the pivot value 
+        DEFINE position <-- Partition(arr, left, right)
+        // Sort the left
+        QuickSort(arr, left, position - 1)
+        // Sort the right
+        QuickSort(arr, position + 1, right)
+
+ALGORITHM Partition(arr, left, right)
+    // set a pivot value as a point of reference
+    DEFINE pivot <-- arr[right]
+    // create a variable to track the largest index of numbers lower than the defined pivot
+    DEFINE low <-- left - 1
+    for i <- left to right do
+        if arr[i] <= pivot
+            low++
+            Swap(arr, i, low)
+
+     // place the value of the pivot location in the middle.
+     // all numbers smaller than the pivot are on the left, larger on the right. 
+     Swap(arr, right, low + 1)
+    // return the pivot index point
+     return low + 1
+
+ALGORITHM Swap(arr, i, low)
+    DEFINE temp;
+    temp <-- arr[i]
+    arr[i] <-- arr[low]
+    arr[low] <-- temp
+
+```
+### Challenge Description
+* Provide a visual step through for each of the sample arrays based on the provided pseudo code
+* Convert the pseudo-code into working code in your language
+* Present a complete set of working tests
+
+### Approach & Efficiency
+Time-complexity: The worst-case complexity of quicksort is O(n2) as lots of comparisons are needed in the worst condition. Whereas in mergesort, worst-case and average-case have the same complexities O(n log n).
+
+## Solution
+![image](../../assets/challenge-28.jpg)
