@@ -59,3 +59,68 @@ No additional space is being created. This array is being sorted in place…keep
 
 ## Solution
 ![image](../../assets/challenge_26.jpg)
+
+## 4-Multi-bracket Validation.
+* function should take a string as its only argument, and should return a boolean * representing whether or not the brackets in the string are balanced. There are 3 types of brackets:
+
+1. Round Brackets : ()
+2. Square Brackets : []
+3. Curly Brackets : {}
+
+## 6- merge_sort:
+### Challenge Summary
+* Review the pseudocode below, then trace the algorithm by stepping through the process with the provided sample array. Document your explanation by creating a blog article that shows the step-by-step output after each iteration through some sort of visual.
+
+* Once you are done with your article, code a working, tested implementation of Merge Sort based on the pseudocode provided.
+**Pseudocode**
+```
+  
+ALGORITHM Mergesort(arr)
+    DECLARE n <-- arr.length
+           
+    if n > 1
+      DECLARE mid <-- n/2
+      DECLARE left <-- arr[0...mid]
+      DECLARE right <-- arr[mid...n]
+      // sort the left side
+      Mergesort(left)
+      // sort the right side
+      Mergesort(right)
+      // merge the sorted left and right sides together
+      Merge(left, right, arr)
+
+ALGORITHM Merge(left, right, arr)
+    DECLARE i <-- 0
+    DECLARE j <-- 0
+    DECLARE k <-- 0
+
+    while i < left.length && j < right.length
+        if left[i] <= right[j]
+            arr[k] <-- left[i]
+            i <-- i + 1
+        else
+            arr[k] <-- right[j]
+            j <-- j + 1
+            
+        k <-- k + 1
+
+    if i = left.length
+       set remaining entries in arr to remaining values in right
+    else
+       set remaining entries in arr to remaining values in left
+
+```
+### Challenge Description
+* Provide a visual step through for each of the sample arrays based on the provided pseudo code
+Convert the pseudo-code into working code in your language.
+
+* Present a complete set of working tests.
+
+### Approach & Efficiency
+* Time: O(nlogn)
+Thw worst case the runtime is O(nlogn)
+* Space: O(n)
+The space complexity of Merge sort is O(n). This means that this algorithm takes a lot of space and may slower down operations for the last data sets.
+
+## Solution
+![image](../../assets/challenge-27.jpg)

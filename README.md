@@ -17,6 +17,7 @@
 |  challege-15 | [Link](/data_structures_and_algorithms_python/data_structure/tree)|tree. |
 |  challege-18 | [Link](/data_structures_and_algorithms_python/challenges/fizz_buzz_tree)|fizz_buzz_tree|
 |  challege-26 | [Link](/data_structures_and_algorithms_python/challenges/Insertion_sort)  |Insertion_sort|
+|  challege-27 | [Link](/data_structures_and_algorithms_python/challenges/merge_sort)  |merge_sort|
 
 
 
