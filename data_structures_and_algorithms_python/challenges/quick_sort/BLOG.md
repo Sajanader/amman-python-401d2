@@ -42,7 +42,9 @@ ALGORITHM Swap(arr, i, low)
     arr[low] <-- temp
 ```        
 ## Trace
-[9,-3,5,2,6,8,-6,1,3]
+          ## [9,-3,5,2,6,8,-6,1,3]
+
+
 ![image](https://miro.medium.com/max/875/1*Njux2syraq38jzBvkNPbQg.png)
 ![image](https://miro.medium.com/max/875/1*q-8787kpdwT57YKVAacEEQ.png)
 ![image](https://miro.medium.com/max/875/1*hDJi4Rx7bzLVGtUKNGRyMA.png)
