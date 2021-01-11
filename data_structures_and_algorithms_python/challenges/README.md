@@ -167,3 +167,17 @@ Time-complexity: The worst-case complexity of quicksort is O(n2) as lots of comp
 
 ## Solution
 ![image](../../assets/challenge-28.jpg)
+
+## 8- Repeated_word:
+
+### Challenge Description
+* Provide a visual step through for each of the sample arrays based on the provided pseudo code
+* Convert the pseudo-code into working code in your language
+* Present a complete set of working tests
+
+### Approach & Efficiency
+Time-complexity:o(n) .
+
+## Solution
+![image]()
+
