@@ -181,3 +181,18 @@ Time-complexity:o(n) .
 ## Solution
 ![image]()
 
+
+
+
+## 9- tree-insertion:
+
+### Challenge Description
+* Write a function called tree_intersection that takes two binary tree parameters.
+* Without utilizing any of the built-in library methods available to your language, return a set of values found in both trees.
+### Approach & Efficiency
+Time-complexity:o(n) .
+space-complexity:o(1) .
+
+## Solution
+![image](../../assets/code_challenge-32.jpg)
+

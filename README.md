@@ -21,6 +21,8 @@
 |  challenge-28 | [Link](/data_structures_and_algorithms_python/challenges/quick_sort)  |quick_sort|
 |  challenge-30 | [Link](/data_structures_and_algorithms_python/data_structure/hashtable)|hash_table|
 |  challenge-31 | [Link](/data_structures_and_algorithms_python/challenges/repeated_word)|repeated_word|
+|  challenge-32 | [Link](/data_structures_and_algorithms_python/challenges/tree_intersection)|tree_intersection|
+
 
 
 
