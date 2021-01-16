@@ -74,6 +74,7 @@ class LinkedList:
             current = self.head 
             for i in range(0, length - k-1): 
                 current = current.next
+            return current.value   
  
 if __name__ == "__main__":
     llist = LinkedList() 
