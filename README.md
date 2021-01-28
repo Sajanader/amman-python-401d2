@@ -22,8 +22,10 @@
 |  challenge-30 | [Link](/data_structures_and_algorithms_python/data_structure/hashtable)|hash_table|
 |  challenge-31 | [Link](/data_structures_and_algorithms_python/challenges/repeated_word)|repeated_word|
 |  challenge-32 | [Link](/data_structures_and_algorithms_python/challenges/tree_intersection)|tree_intersection|
-|  challenge-33 | [Link](/data_structures_and_algorithms_python/challenges/left_join)|left_join|
-data_structures_and_algorithms_python/data_structure/graph)|graph|
+
+|  challenge-33 | [Link](/data_structures_and_algorithms_python/challenges/left_join)|left_join|.
+
+|  challenge-40 | [Link](/data_structures_and_algorithms_python/data_structure/graph)|graph|
 
 
 
