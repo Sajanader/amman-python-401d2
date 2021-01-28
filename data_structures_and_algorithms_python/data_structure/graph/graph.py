@@ -70,7 +70,7 @@ class Graph:
 
         return output
 
-    def pre_order(self, start, output):
+    def depth_first(self, start, output):
         if output is None:
             output = set()
 
@@ -87,6 +87,8 @@ class Graph:
     def size(self):
 
         return len(self.get_nodes())
+    
+
 
 
 
