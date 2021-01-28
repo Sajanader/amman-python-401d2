@@ -53,10 +53,8 @@ class BinaryTree:
         return array_of_output
 
     def max_value(self , root):  
-        if self.root:
-           max_number = self.root.value
+        max_number = self.root.value
         def _closure(node):
-            max_number = self.root.value
             if node:
                 if node.value > max_number:
                     max_number = node.value
