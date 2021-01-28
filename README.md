@@ -25,6 +25,7 @@
 |  challenge-33 | [Link](/data_structures_and_algorithms_python/challenges/left_join)|left_join|.
 |  challenge-40 | [Link](/data_structures_and_algorithms_python/data_structure/graph)|graph|
 |  challenge-41| [Link](/data_structures_and_algorithms_python/data_structure/graph)|breadth-first-graph|
+|  challenge-43| [Link](/data_structures_and_algorithms_python/data_structure/graph)|depth-first-graph|
 
 
 

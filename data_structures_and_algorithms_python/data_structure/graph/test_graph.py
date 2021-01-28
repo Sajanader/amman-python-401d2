@@ -1,5 +1,5 @@
 import pytest
-from graph import Edge, Graph, Vertex
+from graph import Edge, Graph, Vertex 
 
 class TestGraph:
     def test_proof_of_life(self):
@@ -109,4 +109,3 @@ class TestGraph:
         actual = graph.breadth_first(vertex_1)
 
         assert actual == expected    
-
