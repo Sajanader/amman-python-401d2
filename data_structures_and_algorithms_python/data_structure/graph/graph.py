@@ -90,43 +90,38 @@ class Graph:
 
 
 
-# -------------------------------------  
+# -------------------------------------
 class Node:
-    def __init__(self,value):
-        self.value = value
-        self.next = None
- 
+    def __init__(self, val, _next=None):
+        self.val = val
+        self.next = _next
 
 class Queue:
-    def __init__(self):
-        self.front = None
-        self.rear = None
-    def enqueue(self, data):
-        node = Node(data)
-        if self.rear:
-            self.rear.next= node
-            self.rear = node
-        else:
-            self.front =node
-            self.rear = node    
 
-    def dequeue(self,data):
-        if self.front:
-            removed_front = self.front
-            self.front = self.front.next
-            return removed_front
+    def __init__(self, val=None):
+        self.front = self.rear = Node(val) if val else None
+
+    def enqueue(self, val: any):
+        if self.is_empty():
+            self.front = self.rear = Node(val)
         else:
-            raise AttributeError('The Queue is empty')
+            new_node = Node(val)
+            self.rear.next, self.rear = new_node, new_node
+
+    def dequeue(self):
+        if self.is_empty():
+            raise AttributeError('Cannot be called on empty Queue')
+        else:
+            tmp = self.front.val
+            self.front = self.front.next
+            return tmp
 
     def peek(self):
-        try:
-            return self.front.value
-        except AttributeError:
-            return 'There is no any peek becasue the Queue is empty'    
+
+        if self.is_empty():
+            raise AttributeError('Cannot be called on empty Queue')
+        else:
+            return self.front.val
 
     def is_empty(self):
-        if self.front == None:
-           return True
-        else:
-            return False
-      
+        return self.front is None
